@@ -1,0 +1,133 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta name= "viewport" content = "with=device-width, initial-scale=1.0">    
+            <title>SALVER Co.</title>
+            <link rel="stylesheet" href="styles.css">
+            
+            <link rel="stylesheet" href="menu.html">
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="backend.php" href="http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=salverco&table=products_and_services">
+    </head>  
+    <body>
+        
+        <section class="header">
+            <h1>SALVER </h1>    
+            <nav>
+              
+                <div class="nav-links" id="navLinks">
+                   
+                    <ul>
+                        <button onclick="toggleMenu(Home)"> <li><a href="">HOME</a></li></button>
+                        <button onclick="toggleMenu(Aboutus)"> <li><a href="Our about us Mission.html">ABOUT US</a></li></button>     
+                        <button onclick="toggleMenu(Serviceandtechnicalsupport )"> <li><a href="service.html">SERVICES AND TECHNICAL SUPPORT</a></li></button>    
+
+                        <div class="dropdown">
+                            <button onclick="toggleMenu(Products)"> <li><a href="">PRODUCTS</a></li></button>
+                                <div class="dropdown-content">
+                                    <a href="indicator.html">INDICATORS</a>
+                                    <a href="loadcells.html">LOADCELLS</a>
+                                    <a href="cranescales.html">CRANE SCALES</a>
+                                    <a href="junctionboxes.html">JUNCTION BOXES</a>
+
+                                </div>         
+                        
+                            
+                            </div>  
+                            <div class="dropdown">
+                                <button onclick="toggleMenu(weighbrigdes)"> <li><a href="weighbrigde.html">WEIGHBRIDGES</a></li></button>
+                                    <div class="dropdown-content">
+                                        
+                                    </div>         
+                                    <button onclick="toggleMenu(Home)"> <li><a href="FAQ'S.html">FAQ'S</a></li></button>
+                        </ul>
+                        </div>
+
+                        <div class="slideshow-container">
+                            <div class="mySlides_fade">
+                               <img src="b-image/Screenshot_20240304_233713_Google~2.jpg" style="width: 10%;">
+                            </div>
+                            <div class="mySlides_fade">
+                                <img src="b-image/Screenshot_20240304_233946_Google~2.jpg" style="width: 10%;">
+                             </div>
+                     
+                        </div>
+                    
+                    </div>
+                    
+            </nav> 
+            
+                               
+                            </div>
+                        </div>                       
+                        
+                            </div>
+                        </div>
+                </section>   
+
+        <!--------enroll-------->        
+        <section class="enroll">
+            <h1>Enroll for our Various Services</h1>
+            <a href="https://www.marvelmarion71@gmail.com" class="hero-btn"> CONTACT SALVER</a>
+        </section> 
+        <!------Footer-------->
+        <section class="footer">
+            <h4>CONTACTS</h4>
+            <P> Reach us via our various Social Media Accounts:</P>
+            <div class="icons"> 
+                <i class="fa fa-facebook"></i>
+               
+            </div>
+            <p>Reach us on: </p>
+            <div class="icons"> 
+                <i class="fa fa">+254721567921</i>
+
+            </div>
+            <p>Reach us via:@yahoo </p>
+            <div class="icons"> 
+                <i class="fa fa">info@salverco.com</i>
+            </div>
+
+            <p> </p>
+            <div class="icons"> 
+                <i class="">Copyright © 2024 Salver Co. <br> Rights Reserved.<br></i>
+            </div>
+        </section>        
+
+        <!--------JavaScript for Toggle Menu-------->
+        <script>
+            var navLinks= document.getElementById("navLinks");
+            
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+            menu.onclick=() =>{
+                menu.classList.toggle('bx-x');
+                navbar.classList.toggle('open');
+            };
+
+            window.onscroll = () =>{
+                menu.classList.toggle('bx-x');
+                navbar.classList.toggle('open');
+            };
+
+            
+            document.getElementById('flag-dropdown').addEventListener('change', function() {
+  var flag = this.value;
+  var flagDisplay = document.getElementById('flag-display');
+  flagDisplay.innerHTML = getFlagHTML(flag);
+});
+
+   
+        </script>
+    </body>
+</html>
+
+
+
