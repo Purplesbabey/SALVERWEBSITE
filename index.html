@@ -4,7 +4,10 @@
         <meta name= "viewport" content = "with=device-width, initial-scale=1.0">    
             <title>SALVER Co.</title>
             <link rel="stylesheet" href="styles.css">
-            
+
+            <link rel="stylesheet" href="slideshow.html">
+            <link rel="stylesheet" href="logo.html">
+
             <link rel="stylesheet" href="menu.html">
                 <link rel="preconnect" href="https://fonts.gstatic.com">
                 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
@@ -13,10 +16,13 @@
     </head>  
     <body>
         
+
         <section class="header">
-            <h1>SALVER </h1>    
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo">
+                <h1>SALVER COMPANY</h1>
             <nav>
-              
+            
                 <div class="nav-links" id="navLinks">
                    
                     <ul>
@@ -45,21 +51,17 @@
                         </ul>
                         </div>
 
-                        <div class="slideshow-container">
-                            <div class="mySlides_fade">
-                               <img src="b-image/Screenshot_20240304_233713_Google~2.jpg" style="width: 10%;">
-                            </div>
-                            <div class="mySlides_fade">
-                                <img src="b-image/Screenshot_20240304_233946_Google~2.jpg" style="width: 10%;">
-                             </div>
-                     
-                        </div>
-                    
+                       
                     </div>
                     
             </nav> 
             
-                               
+            <div class="slideshow-container">
+                <div class="slide" style="background-image: url('Screenshot_20240304_233713_Google~2.jpg');"></div>
+                <div class="slide" style="background-image: url('Screenshot_20240304_233946_Google~2.jpg');"></div>
+                
+              </div>
+            <script src="script.js"></script>          
                             </div>
                         </div>                       
                         
@@ -67,17 +69,14 @@
                         </div>
                 </section>   
 
-        <!--------enroll-------->        
-        <section class="enroll">
-            <h1>Enroll for our Various Services</h1>
-            <a href="https://www.marvelmarion71@gmail.com" class="hero-btn"> CONTACT SALVER</a>
-        </section> 
+       
         <!------Footer-------->
         <section class="footer">
             <h4>CONTACTS</h4>
             <P> Reach us via our various Social Media Accounts:</P>
             <div class="icons"> 
                 <i class="fa fa-facebook"></i>
+                
                
             </div>
             <p>Reach us on: </p>
