@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url(b-image/Screenshot_20240304_233713_Google~2.jpg);
+        }
+        
+    
+       .slideshow-container{
+        position: relative;
+        max-width: 10%;
+       }
+       
+       .mySlides_fade{
+        display: none;
+       }
+       .next{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        padding: 16px;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+       }
+       .prev{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        padding: 16px;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+
+       }
+      
+
+       .prev{
+        left: 0;
+       }
+       .next{
+        right: 0;
+    
+       }
+       .fade{
+        animation: fade 1.5s;
+       }
+       @keyframes fade{
+        from{
+            opacity: 4;
+        }
+        to{
+            opacity: 1;
+        }
+
+       }
+
+       </style>
+<body>
+    <div class="slideshow-c0ntainer">
+        <div class="mySlides_fade">
+           <img src="b-image/Screenshot_20240304_233713_Google~2.jpg" style="width: 10%;">
+        </div>
+        <div class="mySlides_fade">
+            <img src="b-image/Screenshot_20240304_233946_Google~2.jpg" style="width: 10%;">
+         </div>
+ 
+    </div>
+
+    <!--Add more images as needed-->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="prev" onclick="plusSlides(-1)">&#10095;</a>
+    
+    
+</body>
+
+<!--Add Javascript Slideshow-->
+<script>
+    var slideIndex=1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex +=n);
+
+}
+
+function showSlides(n) {
+    var slides= document.getElementsByClassName("mySlides");
+    if (n > slides.length){slideIndex =1}
+    if(n < 1){slideIndex = slides.length}
+    for(i = 0; 1 <slides.length; 1++){
+        slides[1].styles.display = "none";
+    }
+    slides[slideIndex-1].style.display="block";
+}
+</script>
+
+
